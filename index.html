@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zikkona offers expert roller shutter installation, maintenance, and serving in South Africa. Enhance security and insulation with our custom solutions.">
+    <meta name="keywords" content="roller shutters South Africa, shutter installation, shutter maintenance, security shutters, Zikkona">
+    <meta name="author" content="Zikkona">
+    <title>Zikkona - Roller Shutters South Africa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Zikkona</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1>Zikkona Roller Shutters</h1>
+            <p>Expert installation, maintenance, and serving of roller shutters across South Africa. Secure your property with style.</p>
+            <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+            <img src="images/hero-shutter.jpg" alt="Zikkona roller shutter installation for enhanced security" class="img-fluid mt-4">
+        </div>
+    </section>
+
+    <!-- Portfolio Page -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="filter-buttons">
+                <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="residential">Residential</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+            <div class="row portfolio-gallery" id="portfolio-gallery">
+                <!-- Portfolio items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Zikkona</h2>
+            <p>Zikkona has been a trusted name in South Africa for over a decade, specializing in roller shutter installation, maintenance, and serving. Our team of experts ensures top-quality security solutions for homes and businesses.</p>
+            <h3>Testimonials</h3>
+            <blockquote>"Zikkona transformed our office security with their professional installation. Highly recommend!" - John D.</blockquote>
+            <blockquote>"Fast and reliable maintenance service. Our shutters are like new!" - Sarah M.</blockquote>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div id="confirmation" class="alert alert-success mt-3" style="display: none;">Your message has been sent successfully!</div>
+            <div class="map mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>© 2025 Zikkona. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

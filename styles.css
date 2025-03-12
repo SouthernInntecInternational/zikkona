@@ -1,0 +1,151 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #004d99;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero img {
+    /* Note: Compress image in production for performance */
+    border-radius: 8px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 0;
+}
+
+.portfolio h2 {
+    text-align: center;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    margin: 0 5px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: 100%;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #004d99;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.about h2 {
+    color: #004d99;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #004d99;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+}
+
+.contact h2 {
+    color: #004d99;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border-radius: 0;
+}
+
+#confirmation {
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .portfolio-item {
+        max-width: 100%;
+    }
+    .filter-buttons {
+        flex-direction: column;
+    }
+    .filter-btn {
+        margin: 5px 0;
+    }
+}
